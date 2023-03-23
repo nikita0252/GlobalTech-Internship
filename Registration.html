@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 16px;
+  background-color: white;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #664f4f;
+  margin-bottom: 25px;
+}
+.registerbtn {
+  background-color: #e64343;
+  color: rgb(206, 211, 217);
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+a {
+  color: dodgerblue;
+}
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Registration Page for Global Tech intern</h1>
+    <hr>
+
+    <label for="fname"><b> First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="fname" id="fname" required>
+    
+    <label for="lname"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required>
+    
+        <label for="cname"><b>College</b></label>
+    <input type="text" placeholder="Enter College name" name="cname" id="cname" required>
+    
+     <label for="gender" required><b>Gender:</b></label>
+    <input type="radio" id="male" name="gender" value="male"/>Male
+                    <input type="radio" id="female" name="gender" value="female"/>Female
+                    <br>
+                    <br>
+                    
+<label for="mno"><b>Mobile No</b></label>
+    <input type="text" placeholder="Enter Mobile Number" name="mno" id="psw-repeat" required>
+    
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="current course" required ><b>Current Course:</b></label>
+    <select name="current course" id="current course">
+                        <option value=" ">Select current course:</option>
+                        <option value="B.E">B.E</option>
+                        <option value="BTech.">BTech.</option>
+                        <option value="MTech.">MTech.</option>
+                        <option value="MCA">MCA</option>
+                        <option value="BCA">BCA</option>
+                    </select>
+                    
+    
+    <hr>
+    <button type="submit" class="registerbtn"><b>REGISTER</b></button>
+  </div>
+
+</form>
+
+</body>
+</html>
